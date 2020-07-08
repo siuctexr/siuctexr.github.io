@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+  display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+<ul class="topnav">
+  <li><a class="active" href="https://upesh1.github.io/fortkaskaskia.github.io/">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li class="right"><a href="#about">About</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+</div>
+<h2>Quiz</h2>
+
+<div class="tab">
+  <a href="javascript Quiz.html" <button class="tablinks" onmouseover="openCity(event, 'London')">Quiz 1</button> </a>
+  <a href="Mesoquiz.html" <button class="tablinks" onmouseover="openCity(event, 'Paris')">Quiz 2</button> </a>
+  <a href="#quiz" <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">Quiz 3</button> </a>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Quiz 1</h3>
+  <p>Quiz 1 is about Facts of Java script</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Quiz 2</h3>
+  <p>Quiz 2 is about Facts of Mesoamerican civilization </p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Quiz 3</h3>
+  <p>Quiz 3 is about ....</p>
+</div>
+
+<div class="clearfix"></div>
+<INPUT TYPE="hidden" NAME="redirect" VALUE="new Project.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   font-weight: bold;
+   text-align: center;
+}
+
+</style>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<div class="footer">
+  <p>Developed at CTE</p>
+</div>
+
+   
+</body>
+</html> 

@@ -1,0 +1,146 @@
+
+<html>
+<head></head>
+<title> CAI-Virtual Excavation </title>
+<link rel="stylesheet" type="text/css" href=style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+  *
+ {
+  margin: 0;
+  padding: 0;
+  }
+  #scratch
+  {
+  postion: relative;
+  width: 100%;
+  height: 100%;
+  }
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   font-weight: bold;
+   text-align: center;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #8b0000;
+  color: white;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button3:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button4 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button4:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+</style>
+
+<body>  
+<ul class="topnav">
+  <li><a class="active" href="https://upesh1.github.io/fortkaskaskia.github.io/">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li class="right"><a href="#about">About</a></li>
+</ul>
+
+<a href="New Gallery.html"> <button class="button button1" >Ananysis of recovered Items</button> </a>
+<a href="https://www.youtube.com/watch?v=PcT1vGyJzyg"> <button class="button button2"> Virtual Excavation videos</button> </a>
+<a href="Quiz 1.html"> <button class="button button3"> Artifacts Quiz </button> </a>
+<a href="# Reserve"> <button class="button button4"> Dummy 2</button> </a>
+<div style="padding:0 16px;">
+</div>
+<div class="footer">
+  <p>Developed at CTE</p>
+</div>
+  <div id="scratch"></div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script> 
+  <script src="wscratchpad.min.js"></script>
+  <script type="text/javascript">
+  $('#scratch').wScratchPad({
+  size        : 100,          // The size of the brush/scratch.
+  bg          : 'Background/Foreground.jpg',  // Background (image path or hex color).
+  fg          : 'Background/ground.png',
+});
+</script>
+</body>
+</html>
