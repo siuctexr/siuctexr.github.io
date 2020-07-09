@@ -17,13 +17,13 @@
 <div id="scene">
 <h2> Welcome </h2>
 
-<ul style="list-style-type:none;position: absolute;top: 50%; left: 40%;background-color: rgba(0,0,0,.8);text-align: center;" >
-
-<li id="situation"> <a href="Excavation/Excavate_test_V1.html">Excavation </a> </li>
-<li id="situation"> <a href="Gallery/New Gallery.html">Gallery </a> </li>
-<li id="situation"> <a href="Untitled Quiz/Quiz modules.html">Quiz  </a> </li>
-</ul>
-</div>
+  <div class="center">
+ 
+  <button> <a href="Excavation/Excavate_test_V1.html"> Excavate </a> </button> 
+  <button> <a href="Gallery/New Gallery.html"> Gallery</a></button>
+  <button> <a href="Untitled Quiz/Mesoquiz.html"> Quiz </a></button>
+  
+  </div>
 
 <style>
 body{
@@ -65,7 +65,14 @@ top: 650;
 left: 650;
 color: white;
 }
-
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 </style>
 
