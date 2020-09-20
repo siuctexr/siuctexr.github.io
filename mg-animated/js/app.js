@@ -17,7 +17,7 @@ let renderer = app.renderer;
 let stage = app.stage;
 let loader = app.loader;
 
-var texture = PIXI.Texture.from('../assets/videos/output.webm');
+var texture = PIXI.Texture.from('https://siuctexr.github.io/mg-animated/assets/videos/output.webm');
 // create a new Sprite using the video texture (yes it's that easy)
 var videoSprite = new PIXI.Sprite(texture);
 videoSprite.width = window.innerWidth;
@@ -28,7 +28,7 @@ var video = texture.baseTexture.source;
 video.loop = true;
 video.muted = true;
 
-app.loader.add('../assets/images/frame1.jpg')
+app.loader.add('https://siuctexr.github.io/mg-animated/images/frame1.jpg')
     .load(setup)
 
 
