@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: none;
+    font-family: 'Roboto', sans-serif;
+    min-height: 400px;
+    min-width: 600px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('../assets/imges/frame1.jpg') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+
+.button-container {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.inner-button-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* animation-name: buttonappear;
+    animation-duration: 2s; */
+
+    animation: fadeIn;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.2s;
+    /* don't forget to set a duration! */
+
+    overflow: hidden;
+}
+
+@keyframes buttonappear {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+
+a.button {
+    display: flex;
+    padding: 0.7em 1.7em;
+    margin: 0 2em 0.3em 2em;
+    border-radius: 0em;
+
+    border: 2px solid #2f0f15;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+
+    color: #FFFFFF;
+    background-color: #532029;
+
+    box-shadow: 0 5px 15px rgba(182, 171, 92, .9);
+
+    /* box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17), inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12); */
+
+    text-align: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    min-height: 60px;
+    width: 20%;
+    max-width: 150px;
+
+    /* animation-name: buttonhighlightback;
+    animation-duration: 0.5s; */
+}
+
+a.button:active {
+    box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+}
+
+a.button:hover {
+    /* animation: bounce;
+    animation-duration: 5s; */
+    margin-bottom: 40px;
+    animation-name: buttonhighlight;
+    animation-duration: 0.5s;
+}
+
+
+
+
+@keyframes buttonhighlight {
+    from {
+        margin-bottom: 0;
+    }
+
+    to {
+        margin-bottom: 40px;
+    }
+}
+
+
+@keyframes buttonhighlightback {
+    from {
+        margin-bottom: 40px;
+    }
+
+    to {
+        margin-bottom: 0px;
+    }
+}
+
+
+@media all and (max-width:30em) {
+    a.button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.iframe-container {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    position: relative;
+
+}
+
+#iframe-section {
+    z-index: 9;
+    animation-duration: 3s;
+    display: block;
+}
+
+#main-section {
+    z-index: 10;
+    animation-duration: 4s;
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #532029;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    z-index: 999;
+    text-align: center;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    /* display: block; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.title-span {
+    margin-right: 10px;
+    font-size: 1.8em;
+    color: #ffffff;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.page-title {
+    font-size: 2.0em;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+i {
+    padding-top: 2px;
+}
