@@ -5,74 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XRchaeology</title>
-
-    <script src="js/pixi.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/page-transition.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script defer src="js/app-new.js"></script>
 </head>
 
 <body>
+    <main id="swup" class="transition-fade">
+        <ul class="cb-slideshow">
+            <li><span>Image 01</span></li>
+            <li><span>Image 02</span></li>
+            <li><span>Image 01</span></li>
+            <li><span>Image 02</span></li>
+            <li><span>Image 01</span></li>
+            <li><span>Image 02</span></li>
+        </ul>
 
 
-    <!-- <div class="fullscreen-bg">
-        <video loop muted autoplay poster="assets/images/frame1.jpg" class="fullscreen-bg__video">
-            <source src="assets/videos/output.webm" type="video/webm">
-        </video>
-    </div> -->
-
-
-
-    <content>
         <section id="main-section">
-            <div class="button-container">
-                <div class="inner-button-container">
+            <header>
+                <h1>XRchaeology Miller Grove</h1>
+            </header>
 
-                    <a class="button" role="button" href="#" onclick="change_content_section(1,false)">Digital
-                        Storytelling</a>
+            <div class="button-container">
+                <div class="inner-button-container transition-swipe">
+                    <a class="button" href="/story.html">Digital Storytelling</a>
                     <a class="button" role="button" target="_blank"
                         href="https://www.arcgis.com/apps/Styler/index.html?appid=0c0578eef78a4a52a5f2a4537989d96f ">Interactive
                         GIS</a>
                     <a class="button" role="button" target="_blank"
                         href="https://poly.google.com/view/fss5ZAzr-5w ">Virtual Site Visit</a>
                     <a class="button" role="button" target="_blank" href="https://skfb.ly/6GwsW ">3D Objects</a>
-                    <a class="button" role="button" href="#">WebVR</a>
+                    <a class="button" role="button" href="/video.html">WebVR</a>
 
-
-
-
-                    <!-- <a class="button" role="button" href="#" onclick="change_content_section(1,false)">Digital
-                        Storytelling</a>
-                    <a class="button" role="button" onclick="change_content_section(2,false)" href="#">Interactive
-                        GIS</a>
-                    <a class="button" role="button" onclick="change_content_section(3,false)" href="#">Virtual Site
-                        Visit</a>
-                    <a class="button" role="button" onclick="change_content_section(4,false)">3D
-                        Objects</a>
-                    <a class="button" role="button" href="#">WebVR</a> -->
                 </div>
             </div>
+
+            <footer>
+                <h1>cte.siu.edu</h1>
+            </footer>
         </section>
 
 
-        <section id="iframe-section" class="hidden">
-            <div class="navbar">
-                <a href="#" onclick="change_content_section(0,true)"><i class="material-icons">arrow_back
-                    </i>Back to Home</a>
+    </main>
 
-                <span class="title-span">XRchaeology at Miller Grove</span>
-            </div>
-            <div class="iframe-container" style="margin-top: 30px;">
-                <iframe id='iframe-main' src="https://siuctexr.github.io/MGC/" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
-    </content>
 
 </body>
-
-<script src="js/scaleToWIndow.js"></script>
-<script src="js/app.js"></script>
-
 
 </html>
