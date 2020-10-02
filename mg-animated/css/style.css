@@ -7,7 +7,7 @@ body {
     overflow: none;
     font-family: 'Roboto', sans-serif;
     min-height: 400px;
-    min-width: 600px;
+    /* min-width: 600px; */
     background-color: #D3D3D3;
     /* background-image: url('../assets/images/bg1.jpg'); */
 }
@@ -319,9 +319,42 @@ i {
     }
 }
 
-video {
+/* video {
     width: 100% !important;
     height: auto !important;
     display: block;
     margin: 0 auto;
+} */
+
+.video-js {
+    text-align: center;
+    margin: auto;
+}
+
+.video-js .vac-shape {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(238, 152, 40, 0.3);
+    border: 2px dotted #ee9828;
+    display: none;
+}
+
+.vac-button {
+    visibility: hidden;
+
+}
+
+.cite {
+    margin-top: 3px;
+    padding-top: 5px;
+    text-align: left;
+    font-size: small
+}
+
+.cite span {
+    font-style: italic;
+}
+
+#ann-details {
+    padding: 10px;
 }
