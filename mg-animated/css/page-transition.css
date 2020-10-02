@@ -97,7 +97,7 @@ html.is-leaving .transition-swipe {
 }
 
 .cb-slideshow li:nth-child(1) span {
-    background-image: url(../assets/images/bg1.jpg)
+    background-image: url(../assets/images/bg1_n.jpg)
 }
 
 .cb-slideshow li:nth-child(2) span {
@@ -110,7 +110,7 @@ html.is-leaving .transition-swipe {
 }
 
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(../assets/images/bg1.jpg);
+    background-image: url(../assets/images/bg1_n.jpg);
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -128,7 +128,7 @@ html.is-leaving .transition-swipe {
 }
 
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(../assets/images/bg1.jpg);
+    background-image: url(../assets/images/bg1_n.jpg);
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
