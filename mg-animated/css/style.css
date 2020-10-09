@@ -388,3 +388,18 @@ i {
         margin-top: 80px;
     }
 }
+
+
+.flink{
+    color:white;
+    text-decoration: none;
+    z-index: 99;
+}
+
+.flink:active{
+    color:white
+}
+
+.flink:visited{
+    color:white;
+}
