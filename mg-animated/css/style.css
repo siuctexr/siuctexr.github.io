@@ -132,8 +132,8 @@ a.button {
 
     height: 30%;
     min-height: 60px;
-    width: 20%;
-    max-width: 150px;
+    width: 11%;
+    max-width: 130px;
 
     /* animation-name: buttonhighlightback;
     animation-duration: 0.5s; */
@@ -390,16 +390,16 @@ i {
 }
 
 
-.flink{
-    color:white;
+.flink {
+    color: white;
     text-decoration: none;
     z-index: 99;
 }
 
-.flink:active{
-    color:white
+.flink:active {
+    color: white
 }
 
-.flink:visited{
-    color:white;
+.flink:visited {
+    color: white;
 }
