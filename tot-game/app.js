@@ -271,4 +271,4 @@ allPixelPoints.forEach(elem => {
 
 });
 
-map.setView(xy(2673, 1143), 1);
+// map.setView(xy(2673, 1143), 0);
