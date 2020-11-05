@@ -6,12 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="https://siuctexr.github.io/test1/">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cloud.css">
+    <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>﻿
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+
     <title>Home Page</title>
 </head>
 
 <body>
 
-    <img class="bg1" src="assets/images/bg_top.png">
+
+    <img class="bg1" src="assets/images/bg_top2.png">
+
+    <div class="fog-container">
+        <div id="sky">
+            <!-- <div id="mtn1"></div>
+            <div id="mtn2"></div> -->
+            <div class="fog" id="top-fog" style="z-index: 100;"></div>
+        </div>
+        <!-- <div id="water">
+            <div class="fog" id="reflection-fog"></div>
+        </div> -->
+    </div>
+
+    <svg width="0" height="0">
+        <filter id="cloudy-filter">
+            <feTurbulence id="turbwave" type="fractalNoise" baseFrequency="0.01" seed="54" numOctaves="3" />
+            <feDisplacementMap in="SourceGraphic" scale="50" />
+        </filter>
+        <filter id="mtn-filter">
+            <feTurbulence id="turbwave" type="fractalNoise" baseFrequency="0.01" numOctaves="3" />
+            <feDisplacementMap in="SourceGraphic" scale="50" />
+        </filter>
+    </svg>
+
     <div class="button-container">
         <div class="button-container-inner">
 
@@ -26,7 +54,24 @@
             </a>
         </div>
     </div>
-    <img class="bg1 bg_bottom" src=" assets/images/bg_bottom.png">
+    <img class="bg1 bg_bottom" src=" assets/images/bg_bottom2.png">
+
+
+    <script>
+        var tl = new TimelineMax({
+            delay: 3,
+            repeat: -1
+        });
+
+        tl.to("#turbwave", 200, {
+            attr: {
+                baseFrequency: 0.083
+            },
+            ease: Power1.easeInOut,
+            repeat: -1,
+            yoyo: true
+        }, "-=10");
+    </script>
 
 </body>
 

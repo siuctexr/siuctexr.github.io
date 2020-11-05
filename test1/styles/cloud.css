@@ -1,0 +1,137 @@
+#viewport {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    perspective: 400;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#world {
+    height: 512px;
+    left: 50%;
+    margin-left: -256px;
+    margin-top: -256px;
+    position: absolute;
+    top: 50%;
+    transform-style: preserve-3d;
+    width: 512px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    background: #000;
+    position: relative;
+}
+
+svg#stars-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+svg g path {
+    stroke-width: 1px;
+    stroke: #fff;
+}
+
+.fog-container {
+    width: 100vw;
+    height: 100vh;
+
+    /* background: -webkit-radial-gradient(110% 90%,
+            150vw 55vh,
+            #c78239 0%,
+            #10263d 55%,
+            rgba(8, 28, 54, 0.3) 125%,
+            transparent 150%); */
+
+    overflow: hidden;
+    position: absolute;
+}
+
+.fog {
+    z-index: 6;
+    transform: skew(30deg, 0deg);
+    background: transparent;
+    position: absolute;
+    width: 130vw;
+    left: -15vw;
+    height: 90px;
+    filter: url(#cloudy-filter);
+    /*   box-shadow: 0px 200px 20px 0px rgba(255, 255, 255, 0.4); */
+}
+
+#sky {
+    background: transparent;
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#top-fog {
+    /*     background: coral; */
+    bottom: 240px;
+    box-shadow: 0px 200px 20px 0px rgba(192, 194, 197, 0.9);
+}
+
+/* 050f1c 202329 */
+#water {
+    background: linear-gradient(0deg, #071528 20%, rgba(32, 35, 41, 0.8) 120%);
+    width: 100vw;
+    height: 28vh;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+
+}
+
+#reflection-fog {
+    height: 85px;
+    transform-origin: 50% 50%;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1) rotate(180deg) skew(30deg, 0deg);
+    background: transparent;
+    top: 150px;
+    box-shadow: 0px 210px 20px 0px rgba(255, 255, 255, 0.3);
+}
+
+#mtn1 {
+    height: 40vh;
+    width: 130vw;
+    border: 1px solid rgba(255, 220, 188, 0.4);
+    transform: rotate(-10deg);
+    filter: url(#mtn-filter) blur(0.5px);
+    bottom: -30vh;
+    left: 10vw;
+    position: absolute;
+    background: linear-gradient(0deg, #202329 90%, #503e3e 100%);
+    z-index: 5;
+}
+
+#mtn2 {
+    height: 80vh;
+    width: 100vw;
+    transform: rotate(19deg);
+    filter: url(#mtn-filter) blur(0.5px);
+    bottom: -60vh;
+    left: -35vw;
+    position: absolute;
+    background: linear-gradient(0deg, #12181e 88%, #141313 100%);
+
+}
