@@ -12,19 +12,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    
+    <link rel="stylesheet" href="assets/TemplateData/webglstyle.css">
 
     <link rel="stylesheet" href="css/page-transition.css">
-    <!-- <script src="js/app-new.js"></script> -->
-    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+     <script src="assets/TemplateData/UnityProgress.js"></script>
+    <script src="assets/Build/UnityLoader.js"></script>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
-
-    <script src="js/videojs-annotation-comments.js"></script>
-    <script src="js/annotations.js"></script>
 
 
+    <script>
+        var unityInstance = UnityLoader.instantiate("unityContainer", "assets/Build/WebVR_fin.json", {onProgress: UnityProgress});
+      </script>    
 </head>
 
 <body>
@@ -34,24 +36,23 @@
                 </i>Back to Home</a>
             <span class="title-span">XRchaeology at Miller Grove</span>
         </div>
-        <div class="video-container">
-            <video id="my-video" class="video-js  vjs-big-play-centered vjs-theme-city" controls preload="auto"
-                poster="./assets/images/frame1.jpg" data-setup='{ "inactivityTimeout": 0, "fluid": true }' muted>
-                <source src="./assets/videos/OUT.mp4" type="video/mp4" />
-                <source src="./assets/videos/OUT.webm" type="video/webm" />
-                <source src="./assets/videos/OUT.ogg" type="video/ogg">
-                <p class="vjs-no-js">
-                    To view this video please enable JavaScript, and consider upgrading to a
-                    web browser that supports HTML5 video</a>
-                </p>
-            </video>
-            <div style="margin: auto; text-align: center;">
-                <small>Click on the video to play or pause</small>
+        <div style="height: 100%; height:100%">
+            <div class="text-center" style="text-align: left; padding-top: 5px; margin-top:50px; padding-left:10px">
+                <h2 style="display: inline;">Miller Grove WebVR Tour</h2>                
+                <p style="display: inline;"> (You can use your mouse and keyboard or touchscreen to navigate the scene below.)</p>
             </div>
-            <div style="text-align: justify; margin:auto">
-                <div id="ann-details">
+
+            <div class="webgl-content" style="width: 95%; height: 80%;">
+                <!-- <div id="unityContainer" style="width: 960px; height: 600px"></div> -->
+                <div id="unityContainer" style="width: 100%; height: 100%"></div>
+
+                <div class="footer">
+                  <div class="fullscreen" style="cursor:pointer;" onclick="unityInstance.SetFullscreen(1)"></div>
+                  <div class="title">Full Screen</div>
                 </div>
-            </div>
+              </div>
+
+
         </div>
 
 
@@ -59,11 +60,6 @@
 
 </body>
 
-<script>
-    initVideoAnnotations();
-</script>
-<!-- <script src="js/scaleToWIndow.js"></script> -->
-<!-- <script src="js/app.js"></script> -->
 
 
 </html>
