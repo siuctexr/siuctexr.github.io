@@ -20,6 +20,14 @@
     <script src="js/videojs-annotation-comments.js"></script>
     <script src="js/annotations.js"></script>
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -45,9 +53,9 @@
                     <a class="button" role="button" target="_blank"
                         href="https://www.arcgis.com/apps/Styler/index.html?appid=0c0578eef78a4a52a5f2a4537989d96f ">Interactive
                         GIS</a>
-                    <a class="button" role="button"
-                    href="/mg-animated/site-visit.html">Virtual Site Visit</a>
-                    <a class="button" role="button" target="_blank" href="https://sketchfab.com/XRchaeology/collections/miller-grove-3d">3D Objects</a>
+                    <a class="button" role="button" href="/mg-animated/site-visit.html">Virtual Site Visit</a>
+                    <a class="button" role="button" target="_blank"
+                        href="https://sketchfab.com/XRchaeology/collections/miller-grove-3d">3D Objects</a>
                     <a class="button" role="button" href="/mg-animated/video.html" data-no-swup="no-swup">Web VR</a>
                     <a class="button" role="button" href="https://siuctexr.github.io/Primarysources/" target="_blank"
                         data-no-swup="no-swup">Primary Sources</a>
@@ -58,8 +66,66 @@
                 </div>
             </div>
 
+            <div id="dialog" title="Credits">
+                <div class="text-center dialog-content" style="text-align: center;font-size: smaller;">
+                    <h2>Created at SIU Center for Teaching Excellence</h2>
+                    <hr />
+                    <h2>Data Contributed by:</h2>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            Mary McCorvie (Co-Director Miller Grove Archaeology Beneath the Forest Floor, USDA Forest
+                            Service)
+
+                        </li>
+                        <li>
+                            2018 CAI SIU Field School Team, Field Research Co-Directed by Dr. Mark Wagner, Director of
+                            the Center for Archaeological Investigations, SIU
+                        </li>
+                    </ul>
+
+                    <br />
+                    <hr />
+
+                    <h2>Design, development, and implementation of final WebApp:</h2>
+                    <ul style="list-style-type: none;">
+                        <li>Dr. Kayeleigh Sharp (XR Team Lead & Miller Grove Concept Developer)</li>
+                        <li> Bijay Raj Paudel (WebApp coding and WebGL innovation)</li>
+                        <li>Upesh Nepal (3D modeling, SCORM developer)</li>
+                        <li>Dr. Grant Miller, SIU and Educating with Evidence Underground Railroad in Southern Illinois
+                            Project</li>
+                        <li>Stacie Tefft, Murphysboro (Curriculum Developer/original lesson plans design); MHS
+                            implementation and data analysis.</li>
+                    </ul>
+
+                    <br />
+                    <hr />
+                    <h2>Special thanks to</h2>
+                    <ul class=" list-style" style="list-style-type: none;">
+                        <li>Karla Berry, Director of the Center for Teaching Excellence</li>
+                        <li>Don Barth (360 Panoramas)</li>
+                        <li>Gregory Wendt (Excavation Video)</li>
+                    </ul>
+
+                    <br>
+
+                    <p>As well as our phenomenal undergraduate and
+                        Graduate student assistants who made it possible:</p>
+
+                    <ul style="list-style-type: none;">
+                        <li> Gary Tippin</li>
+                        <li>Kendra Kennedy</li>
+                        <li>Alyxx Thompson</li>
+                        <li>Joshua Cannon</li>
+                        <li>Benjamin Bradley</li>
+                    </ul>
+
+
+                </div>
+            </div>
+
             <footer>
-                <h1 style="z-index: 99;"><a class="flink" href="https://cai.siu.edu/" target="_blank">cai.siu.edu</a>
+                <h1 style="z-index: 99;"> <span id="opener" style="cursor: pointer;">credits | </span> <a class="flink"
+                        href="https://cai.siu.edu/" target="_blank">cai.siu.edu</a>
                 </h1>
             </footer>
         </section>
@@ -70,5 +136,17 @@
 
 </body>
 <script src="js/app-new.js"></script>
+
+<script>
+    $("#dialog").dialog({
+        autoOpen: false,
+        width: 700,
+        minWidth: 500,
+        maxWidth: 800,
+    });
+    $("#opener").click(function () {
+        $("#dialog").dialog("open");
+    });
+</script>
 
 </html>

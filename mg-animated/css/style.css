@@ -403,3 +403,9 @@ i {
 .flink:visited {
     color: white;
 }
+
+
+.dialog-content{
+    text-align: center;
+    font-size: small;
+}

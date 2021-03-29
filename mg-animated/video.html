@@ -12,21 +12,26 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    
+
     <link rel="stylesheet" href="assets/TemplateData/webglstyle.css">
 
     <link rel="stylesheet" href="css/page-transition.css">
-     <script src="assets/TemplateData/UnityProgress.js"></script>
+    <script src="assets/TemplateData/UnityProgress.js"></script>
     <script src="assets/Build/UnityLoader.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
 
     <script>
-        var unityInstance = UnityLoader.instantiate("unityContainer", "assets/Build/WebVR_fin.json", {onProgress: UnityProgress});
-      </script>    
+        var unityInstance = UnityLoader.instantiate("unityContainer", "assets/Build/WebVR_fin.json", { onProgress: UnityProgress });
+    </script>
 </head>
 
 <body>
@@ -38,8 +43,9 @@
         </div>
         <div style="height: 100%; height:100%">
             <div class="text-center" style="text-align: left; padding-top: 5px; margin-top:50px; padding-left:10px">
-                <h2 style="display: inline;">Miller Grove WebVR Tour</h2>                
-                <p style="display: inline;"> (You can use your mouse and keyboard or touchscreen to navigate the scene below.)</p>
+                <h2 style="display: inline;">Miller Grove WebVR Tour</h2>
+                <p style="display: inline;"> (You can use your mouse and keyboard or touchscreen to navigate the scene
+                    below.)</p>
             </div>
 
             <div class="webgl-content" style="width: 95%; height: 80%;">
@@ -47,16 +53,90 @@
                 <div id="unityContainer" style="width: 100%; height: 100%"></div>
 
                 <div class="footer">
-                  <div class="fullscreen" style="cursor:pointer;" onclick="unityInstance.SetFullscreen(1)"></div>
-                  <div class="title">Full Screen</div>
+                    <div class="fullscreen" style="cursor:pointer;" onclick="unityInstance.SetFullscreen(1)"></div>
+                    <div class="title">Full Screen</div>
                 </div>
-              </div>
+            </div>
 
 
         </div>
 
+        <div id="dialog" title="Credits">
+            <div class="text-center dialog-content" style="text-align: center;font-size: smaller;">
+                <h2>Created at SIU Center for Teaching Excellence</h2>
+                <hr />
+                <h2>Data Contributed by:</h2>
+                <ul style="list-style-type: none;">
+                    <li>
+                        Mary McCorvie (Co-Director Miller Grove Archaeology Beneath the Forest Floor, USDA Forest
+                        Service)
 
+                    </li>
+                    <li>
+                        2018 CAI SIU Field School Team, Field Research Co-Directed by Dr. Mark Wagner, Director of
+                        the Center for Archaeological Investigations, SIU
+                    </li>
+                </ul>
+
+                <br />
+                <hr />
+
+                <h2>Design, development, and implementation of final WebApp:</h2>
+                <ul style="list-style-type: none;">
+                    <li>Dr. Kayeleigh Sharp (XR Team Lead & Miller Grove Concept Developer)</li>
+                    <li> Bijay Raj Paudel (WebApp coding and WebGL innovation)</li>
+                    <li>Upesh Nepal (3D modeling, SCORM developer)</li>
+                    <li>Dr. Grant Miller, SIU and Educating with Evidence Underground Railroad in Southern Illinois
+                        Project</li>
+                    <li>Stacie Tefft, Murphysboro (Curriculum Developer/original lesson plans design); MHS
+                        implementation and data analysis.</li>
+                </ul>
+
+                <br />
+                <hr />
+                <h2>Special thanks to</h2>
+                <ul class=" list-style" style="list-style-type: none;">
+                    <li>Karla Berry, Director of the Center for Teaching Excellence</li>
+                    <li>Don Barth (360 Panoramas)</li>
+                    <li>Gregory Wendt (Excavation Video)</li>
+                </ul>
+
+                <br>
+
+                <p>As well as our phenomenal undergraduate and
+                    Graduate student assistants who made it possible:</p>
+
+                <ul style="list-style-type: none;">
+                    <li> Gary Tippin</li>
+                    <li>Kendra Kennedy</li>
+                    <li>Alyxx Thompson</li>
+                    <li>Joshua Cannon</li>
+                    <li>Benjamin Bradley</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <footer>
+            <h1 style="z-index: 99;"> <span id="opener" style="cursor: pointer;">credits | </span> <a class="flink"
+                    href="https://cai.siu.edu/" target="_blank">cai.siu.edu</a>
+            </h1>
+        </footer>
     </main>
+
+
+    <script>
+        $("#dialog").dialog({
+            autoOpen: false,
+            width: 700,
+            minWidth: 500,
+            maxWidth: 800,
+        });
+        $("#opener").click(function () {
+            $("#dialog").dialog("open");
+        });
+    </script>
 
 </body>
 
