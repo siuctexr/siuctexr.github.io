@@ -1,0 +1,208 @@
+
+
+<html>
+    <head></head>
+    <title> CAI-Virtual Excavation </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {margin: 0;}
+    
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    ul.topnav li {float: left;}
+    
+    ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    ul.topnav li a:hover:not(.active) {background-color: #111;}
+    
+    ul.topnav li a.active {background-color: #4CAF50;}
+    
+    ul.topnav li.right {float: right;}
+    
+    @media screen and (max-width: 600px) {
+      ul.topnav li.right, 
+      ul.topnav li {float: none;}
+    }
+    
+      *
+     {
+      margin: 0;
+      padding: 0;
+      }
+      #scratch
+      {
+      postion: relative;
+      width: 100%;
+      height: 100%;
+      }
+      .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #333;
+       color: white;
+       font-weight: bold;
+       text-align: center;
+    }
+    .button {
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    
+    .button1 {
+      background-color: white; 
+      color: black; 
+      border: 2px solid #4CAF50;
+    }
+    
+    .button1:hover {
+      background-color: #8b0000;
+      color: white;
+    }
+    .button2 {
+      background-color: white; 
+      color: black; 
+      border: 2px solid #008CBA;
+    }
+    
+    .button2:hover {
+      background-color: #008CBA;
+      color: white;
+    }
+    .button3 {
+      background-color: white; 
+      color: black; 
+      border: 2px solid #008CBA;
+    }
+    
+    .button3:hover {
+      background-color: #008CBA;
+      color: white;
+    }
+
+    main {
+    background: white;
+    height: 100vh;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    }
+
+    .fitVids-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    }
+    .fitVids-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+    .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+    }
+
+
+    </style>
+
+
+    <script>
+
+        // Vanilla version of FitVids
+        // Still licencened under WTFPL
+        //
+        // Not as robust and fault tolerant as the jQuery version.
+        // It's BYOCSS.
+        // And also, I don't support this at all whatsoever.
+
+        // (function(window, document, undefined) {
+        // "use strict";
+
+        // // List of Video Vendors embeds you want to support
+        // var players = ['iframe[src*="youtube.com"]', 'iframe[src*="vimeo.com"]'];
+
+        // // Select videos
+        // var fitVids = document.querySelectorAll(players.join(","));
+
+        // // If there are videos on the page...
+        // if (fitVids.length) {
+        //     // Loop through videos
+        //     for (var i = 0; i < fitVids.length; i++) {
+        //     // Get Video Information
+        //     var fitVid = fitVids[i];
+        //     var width = fitVid.getAttribute("width");
+        //     var height = fitVid.getAttribute("height");
+        //     var aspectRatio = height / width;
+        //     var parentDiv = fitVid.parentNode;
+
+        //     // Wrap it in a DIV
+        //     var div = document.createElement("div");
+        //     div.className = "fitVids-wrapper";
+        //     div.style.paddingBottom = aspectRatio * 100 + "%";
+        //     parentDiv.insertBefore(div, fitVid);
+        //     fitVid.remove();
+        //     div.appendChild(fitVid);
+
+        //     // Clear height/width from fitVid
+        //     fitVid.removeAttribute("height");
+        //     fitVid.removeAttribute("width");
+        //     }
+        // }
+        // })(window, document);
+    </script>
+    
+    <body>  
+    <ul class="topnav">
+      <li><a class="active" href="https://siuctexr.github.io/virtual-excavation/Excavation/index.html">Home</a></li>
+    </ul>
+    <div>
+        <h2 style="text-align: center;">SIU Field School Video</h2>
+        <div class="videoWrapper" style="padding-left: 25px; padding-right: 25px;">
+            <iframe  src="https://www.youtube.com/embed/PLE_uLPLETU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>    
+ 
+    <div class="footer">
+      <p>Developed at CTE</p>
+    </div>
+      <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+      crossorigin="anonymous"></script>        -->
+    </body>
+    </html>
+
