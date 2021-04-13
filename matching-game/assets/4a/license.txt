@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pot V2 3
+* source:	https://sketchfab.com/3d-models/pot-v2-3-8cd0fa8cd60444119e2eef26fdc66447
+* author:	XRchaeology Team (https://sketchfab.com/XRchaeology)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pot V2 3" (https://sketchfab.com/3d-models/pot-v2-3-8cd0fa8cd60444119e2eef26fdc66447) by XRchaeology Team (https://sketchfab.com/XRchaeology) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

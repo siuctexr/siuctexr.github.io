@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mochica Pottery Dog
+* source:	https://sketchfab.com/3d-models/mochica-pottery-dog-df71fdd722e94452918a6ed05abf9495
+* author:	XRchaeology Team (https://sketchfab.com/XRchaeology)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mochica Pottery Dog" (https://sketchfab.com/3d-models/mochica-pottery-dog-df71fdd722e94452918a6ed05abf9495) by XRchaeology Team (https://sketchfab.com/XRchaeology) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
