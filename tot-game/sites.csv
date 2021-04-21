@@ -1,0 +1,93 @@
+id,site_type,name
+1,CAMPGROUND,"Cannon Camp, November  7, 1837"
+1,MILL,Cowan Mill Seat
+1,TAVERN,Blair Tavern
+1,EURO-AM_CEM,Foote Cemetery
+2,CHEROKEE BURIAL,"Cannon Party, 11/8/1837, Child burial"
+2,CAMPGROUND,"Butrick December 15, 1838 camp"
+2,EURO-AM_CEM,Gregory Cemetery
+2,EURO-AM_CEM,Compton Cemetery
+2,EURO-AM_CEM,Prospect Cemetery
+3,CHEROKEE BURIAL,Old Brownfield Cherokee  Cemetery
+3,EURO-AM_CEM,Fields Cemetery
+3,EURO-AM_CEM,Old Brownfield Cemetery
+3,CAMPGROUND,"Butrick Camp, Dec 19, 1838"
+4,CHEROKEE BURIAL,"Dixon Springs Cherokee, Cemetery"
+4,CAMPGROUND,"Butrick Camp, Dec 21, 1838"
+4,SPRING,Dixon Springs 2-5
+4,EURO-AM_CEM,Hazel/Dixon Springs Cemetery
+4,EURO-AM_CEM,Henley Cemetery
+5,CAMPGROUND,Bay Creek Site Campground
+6,TAVERN,Mccorkle Tavern
+6,CAMPGROUND,"Mccorkle Creek, Campground"
+6,EURO-AM_CEM,Mccorkle Cemetery
+6,MILL,Mccorkle Mill ?
+6,RESIDENCE,McCorkle Residence
+7,CAMPGROUND,Cache Creek Campground (Provisional)*
+8,CAMPGROUND,Dutchman Creek Campground
+8,MILL,Dutchman Creek Mill (Brazel's Mill)
+8,CHEROKEE BURIAL,Dutchman Creek Campground
+8,RESIDENCE,John W. Gore Residence (Provisional)
+8,SPRING,Carlton Spring
+9,RESIDENCE,William Elkins Residence
+9,TOWN,Town Of West Vienna
+9,CAMPGROUND,West Vienna Campground (P)*
+10,CAMPGROUND,Bridges Campground
+10,RESIDENCE,Bridges Site
+10,TAVERN,Bridges Tavern
+10,SPRING,Bridges Covered Spring
+10,SPRING,Bridges Site Spring
+10,RESIDENCE,John W. Gore Residence
+11,CAMPGROUND,Buckrun Creek Campground
+11,CHEROKEE BURIAL,Beggs Cherokee 
+12,CHEROKEE BURIAL,Taylor Camp
+12,CAMPGROUND,Taylor Camp
+12,LIQUOR,Gore & Garner Liquor
+13,CAMPGROUND,Mt. Pleasant
+13,CHEROKEE BURIAL,Old Mt. Pleasant Cemetery (Cox/Stokes/Standard)
+13,TOWN,Town Of Mt. Pleasant
+14,CHEROKEE BURIAL,Campground Church
+14,RESIDENCE,Hileman G. Homestead
+14,CAMPGROUND,Campground Church
+14,LIQUOR,Stokes Liquor Stand
+14,MILL,G. Hileman Grist Mill
+14,SPRING,Campground Church Spring 1-3
+14,EURO-AM_CEM,Campground Church Cemetery
+15,RESIDENCE,Jonesboro Residences 1-19
+15,TAVERN,Davie Tavern
+15,CAMPGROUND,Lincoln-douglas Debate Site
+15,RESIDENCE,Craver Residence (P)
+15,TAVERN,Meness Tavern
+15,LIQUOR,Jonesboro Retail Liquor (and merchandise) 1-40
+15,OTHER,T. & E. Sams Retail
+15,TAVERN,Jonesboro Taverns 1-15
+15,SPRING,Jonesboro Spring
+15,GROCERY,Jonesboro Groceries 1-8
+15,TAVERN,Williams Tavern
+15,TAVERN,Tripp Tavern
+15,TOWN,Town Of Jonesboro
+15,TAVERN,Hacker J. Tavern
+15,EURO-AM_CEM,Jonesboro Cemetery
+16,CHEROKEE BURIAL,Willard’s Mill
+16,CAMPGROUND,Willard’s Mill
+16,MILL,Willard Mill
+16,EURO-AM_CEM,Kimmel (Old Dunkard)
+17,CHEROKEE BURIAL,Morgan Mill/Dutch Creek Campground
+17,RESIDENCE,Morgan Farm
+17,BRIDGE,Morgan Bridge
+17,MILL,Morgan Mill
+17,CAMPGROUND,Morgan Mill/Dutch Creek
+17,EURO-AM_CEM,Morgan Cemetery
+17,TAVERN,Arendell Tavern
+17,OTHER,Morgan Smithy
+18,SPRING,Site 11U615
+18,EURO-AM_CEM,"11U308 (Cotner, Gammer, Massy-Cox Cemetery)"
+18,CAMPGROUND,11U621
+19,CAMPGROUND,Clear Creek
+20,CAMPGROUND,Willard’s Landing
+20,FERRY,Green's Lower Ferry & Green's Upper Ferry
+20,FERRY,Willard's Landing
+20,LIQUOR,"Willard E. Liquor, Willard & McGhehy Liquor (P)"
+21,CHEROKEE BURIAL,Hamburg Landing
+21,CAMPGROUND,Hamburg Landing
+21,FERRY,Hamburg Landing/Littleton's Old Ferry
